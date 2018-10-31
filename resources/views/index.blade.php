@@ -4,14 +4,14 @@
 	<div class="row">
 		<div class="col">
 			<h1>Bienvenido/a al Mastermind!</h1>
-			<img src="/images/bola0.png" value="1" style="width: 32px; height: 32px;" >
-			<img src="/images/bola1.png" value="2" style="width: 32px; height: 32px;">
-			<img src="/images/bola2.png" value="3" style="width: 32px; height: 32px;">
-			<img src="/images/bola3.png" value="4" style="width: 32px; height: 32px;">
-			<img src="/images/bola4.png" value="5" style="width: 32px; height: 32px;">
-			<img src="/images/bola5.png" value="6" style="width: 32px; height: 32px;">
-			<img src="/images/bola6.png" value="7" style="width: 32px; height: 32px;">
-			<img src="/images/bola7.png" value="8" style="width: 32px; height: 32px;"><br>
+			<img src="/images/bola1.png" value="1" style="width: 32px; height: 32px;" >
+			<img src="/images/bola2.png" value="2" style="width: 32px; height: 32px;">
+			<img src="/images/bola3.png" value="3" style="width: 32px; height: 32px;">
+			<img src="/images/bola4.png" value="4" style="width: 32px; height: 32px;">
+			<img src="/images/bola5.png" value="5" style="width: 32px; height: 32px;">
+			<img src="/images/bola6.png" value="6" style="width: 32px; height: 32px;">
+			<img src="/images/bola7.png" value="7" style="width: 32px; height: 32px;">
+			<img src="/images/bola8.png" value="8" style="width: 32px; height: 32px;"><br>
 
 			<br>
 			<br>
