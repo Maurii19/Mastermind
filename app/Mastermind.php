@@ -84,12 +84,10 @@ class Mastermind extends Model
     }
 
     public static function generateRandomKey($keylength, $colors, $repeat){
-      if($repeat == 'true'){
-        $key = self::repeatKey($keylength, $colors);
-      }else{
         $key = self::noRepeatKey($keylength, $colors);
-      }
+
       return $key;
 
     }
+
 }
