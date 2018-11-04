@@ -13,3 +13,4 @@
 
 Route::get('/', 'MastermindController@getIndex');
 Route::post('/mastermind', 'MastermindController@postDatos');
+Route::post('/mastermind_comprobar', 'MastermindController@postGame');

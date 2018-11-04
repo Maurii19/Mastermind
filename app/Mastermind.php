@@ -67,7 +67,7 @@ class Mastermind extends Model
       $key  = array();
       for ($i=0; $i < $keylength ; $i++) {
         $value = rand(1, $colors);
-        array_push($key, Ball::withProperties($value, "/images/bola".$value."png"));
+        array_push($key, Ball::withProperties($value, "/images/bola".$value.".png"));
       }
       return $key;
     }
@@ -76,16 +76,19 @@ class Mastermind extends Model
       $key =   array();
        $num = range(1, $colors);
        shuffle($num);
-       for ($i=0; $i > $keylength ; $i++) {
+       for ($i=0; $i < $keylength; $i++) {
          $value = $num[$i];
-         array_push($key, Ball::withProperties($value, "/images/bola".$value."png"));
+         array_push($key, Ball::withProperties($value, "/images/bola".$value.".png"));
        }
        return $key;
     }
 
     public static function generateRandomKey($keylength, $colors, $repeat){
+        if($repeat == 'true'){
+        $key = self::repeatKey($keylength, $colors);
+      }else{
         $key = self::noRepeatKey($keylength, $colors);
-
+      }
       return $key;
 
     }

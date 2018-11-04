@@ -9,10 +9,11 @@ class Ball extends Model
     private $imgLink;
     private $value;
 
-    public static function withProperties($imgLink, $value){
+    public static function withProperties($value, $imgLink){
       $ball = new Ball();
-      $ball ->setImgLink($imgLink);
-      $ball ->setValue($value);
+      $ball->setValue($value);
+      $ball->setImgLink($imgLink);
+      
       return $ball;
     }
 
@@ -33,12 +34,12 @@ class Ball extends Model
     }
 
     public static function generateUserKey($keylength, $userKeyValue){
-      $userkey = array();
-      for ($i=0; $i < $keylength ; $i++) {
-        array_push($userkey, self::withProperties($userKeyValue[$i], "/images/bola".$userKeyValue[$i]."png"));
-      }
+      $userKey = array();
+    for($i = 0; $i < $keylength;$i++){
+      array_push($userKey, self::withProperties($userKeyValue[$i],"/images/bola".$userKeyValue[$i].".png"));
+    }
 
-      return $userkey;
+      return $userKey;
     }
 
 }

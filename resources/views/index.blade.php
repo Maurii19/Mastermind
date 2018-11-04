@@ -4,34 +4,34 @@
 	<div class="row">
 		<div class="col">
 			<h1>Bienvenido/a al Mastermind!</h1>
-			<img src="/images/bola1.png" value="1" style="width: 32px; height: 32px;" >
-			<img src="/images/bola2.png" value="2" style="width: 32px; height: 32px;">
-			<img src="/images/bola3.png" value="3" style="width: 32px; height: 32px;">
-			<img src="/images/bola4.png" value="4" style="width: 32px; height: 32px;">
-			<img src="/images/bola5.png" value="5" style="width: 32px; height: 32px;">
-			<img src="/images/bola6.png" value="6" style="width: 32px; height: 32px;">
-			<img src="/images/bola7.png" value="7" style="width: 32px; height: 32px;">
-			<img src="/images/bola8.png" value="8" style="width: 32px; height: 32px;"><br>
+			<img height="32px" width="32px" src="/images/bola1.png" value="1" />
+			<img height="32px" width="32px" src="/images/bola2.png" value="2" />
+			<img height="32px" width="32px" src="/images/bola3.png" value="3" />
+			<img height="32px" width="32px" src="/images/bola4.png" value="4" />
+			<img height="32px" width="32px" src="/images/bola5.png" value="5" />
+			<img height="32px" width="32px" src="/images/bola6.png" value="6" />
+			<img height="32px" width="32px" src="/images/bola7.png" value="7" />
+			<img height="32px" width="32px" src="/images/bola8.png" value="8" />
 
-			<br>
-			<br>
+			
 	<form action="{{ URL::to('/mastermind') }}" method="POST">
 		@csrf
-		Jugador/a<input type="text" name="name"><br>
+		<span>Jugador/a</span>
+		<input type="text" name="name"><br>
 		<br><p>Longitud de la clave:</p>
 			<input type="radio" name="keylength" value="4" > 4
 			<input type="radio" name="keylength" value="5" > 5
 		<p>Numero de colores posibles:</p>
-			<input type="radio" name="colors" value="color4" > 4
-			<input type="radio" name="colors" value="color5" > 5
-			<input type="radio" name="colors" value="color6" > 6
-			<input type="radio" name="colors" value="color7" > 7
-			<input type="radio" name="colors" value="color8" > 8
+			<input type="radio" name="colors" value="4" > 4
+			<input type="radio" name="colors" value="5" > 5
+			<input type="radio" name="colors" value="6" > 6
+			<input type="radio" name="colors" value="7" > 7
+			<input type="radio" name="colors" value="8" > 8
 		<p>Permitir repetidos</p>
-			<input type="radio" name="repeat" value="si" > Si
-			<input type="radio" name="repeat" value="no" > No
+			<input type="radio" name="repeat" value="true" > Si
+			<input type="radio" name="repeat" value="false" > No
 		<p>Numero de intentos:</p>
-			<select name="attempts">
+			<select name="attempts" required>
 		    	<option value="1">1</option>
 		    	<option value="2">2</option>
 		    	<option value="3">3</option>
